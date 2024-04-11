@@ -1,5 +1,5 @@
 .meal-container{
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1020;
     height: 100vh;
@@ -98,4 +98,11 @@
     font-size: 0.9em;
     cursor: pointer;
 }
+
+.modal-controller > div:nth-child(2){
+    background-color: rgb(180, 11, 11);
+    color: white;
+}
+
+
 

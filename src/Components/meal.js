@@ -41,6 +41,7 @@ const Meal = () => {
             Close
           </div>
           <div
+            className="order"
             onClick={(e) => {
               e.stopPropagation();
 

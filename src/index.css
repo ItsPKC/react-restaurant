@@ -8,8 +8,7 @@ body {
   background-color: rgb(50, 50, 50);
   background-image: url("./assets/table.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  
+  background-size:  100% 400px; 
 }
 
 code {

@@ -1,7 +1,7 @@
 .menu-container{
     display: grid;
-    margin: 30px auto 0 auto;
-    width: 70%;
+    margin: 30px auto 70px auto;
+    width: 60%;
     padding: 30px;
     border-radius: 10px;
     background-color: white;

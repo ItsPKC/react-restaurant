@@ -2,6 +2,7 @@ import React, { useState, createContext } from "react";
 import Header from "./Components/header";
 import Menu from "./Components/menu";
 import Meal from "./Components/meal";
+import About from "./Components/About";
 
 export const Context = createContext();
 
@@ -15,6 +16,7 @@ const App = () => {
     >
       {mealModal && <Meal />}
       <Header />
+      <About />
       <Menu />
     </Context.Provider>
   );
