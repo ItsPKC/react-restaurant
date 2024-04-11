@@ -1,0 +1,101 @@
+.meal-container{
+    position: absolute;
+    top: 0;
+    z-index: 1020;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    display: grid;
+    place-items: center;
+}
+
+.meal-box{
+    width: 40%;
+    margin: 0 auto;
+    background-color: white; 
+    overflow:auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.mealItem{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.mealItemDetails > div:nth-child(1){
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.mealItemDetails > div:nth-child(2){
+    display: grid;
+    grid-template-columns: 100px auto;
+    margin-top: 10px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.mealItemDetails > div:nth-child(2) > div:nth-child(2)   {
+    border: 0.5px solid lightgrey;
+    border-radius: 5px;
+    padding: 0 5px 3px 5px;
+}
+
+.mealItemManager{
+    display: grid;
+    grid-template-columns: repeat(2, 40px);
+    align-items: center;
+    gap: 10px;
+    color:  rgb(180, 11, 11); 
+    justify-content: end;
+
+}
+
+.mealItemManager > div{
+    display: block;
+    cursor: pointer;
+    padding: 0 10px 4px 10px;
+    border: 0.5px solid rgb(180, 11, 11);
+    border-radius: 5px;
+}
+
+.mealItemManager > div:hover{
+    background-color:rgb(180, 11, 11) ;
+    color: white;
+}
+
+
+.mealItemDivider{
+    display: block;
+    height: 1px;
+    background-color: rgb(180, 11, 11);
+    width: calc(100%);
+    margin: 15px 0;
+}
+
+.order-value{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.modal-controller{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: right;
+    gap: 20px;
+}
+
+.modal-controller > div{
+    margin-top: 20px;
+    border: 1px solid rgb(180, 11, 11);
+    padding: 2px 20px 5px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+

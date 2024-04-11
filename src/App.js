@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, createContext } from "react";
+import Header from "./Components/header";
+import Menu from "./Components/menu";
+import Meal from "./Components/meal";
 
-function App() {
+export const Context = createContext();
+
+const App = () => {
+  const [meal, setmeal] = useState({}); // Store data in the form of "index : amount" (In reality amount is quantity)
+  const [mealCount, setmealCount] = useState(0);
+  const [mealModal, setmealModal] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context.Provider
+      value={{ meal, setmeal, setmealModal, mealCount, setmealCount }}
+    >
+      {mealModal && <Meal />}
+      <Header />
+      <Menu />
+    </Context.Provider>
   );
-}
+};
 
 export default App;
